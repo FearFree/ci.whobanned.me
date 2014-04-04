@@ -43,7 +43,9 @@
     <div class="ui list">
       <?php
         foreach (array_slice($files, 1) as $build => $date) {
-          echo '<a class="item" href="http://ci.whobanned.me/dev/'.$build.'">'.$build.'</a> <small>('.gmdate("Y-m-d H:i:s", $date).')</small>';
+          echo '<a class="item" href="http://ci.whobanned.me/dev/'.$build.'">'.$build.'</a>
+          <small>('.gmdate("Y-m-d H:i:s", $date).')</small>
+          ';
         }
       ?>
     </div>
