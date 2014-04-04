@@ -32,7 +32,7 @@
     <p>Current Release Build: <a class="white" href="http://ci.whobanned.me/release/1.1">1.1</a></p>
     
     <p>Latest Dev Build: 
-      <a href="http://ci.whobanned.me/dev/<?php echo($filekeys['0']);?>"><?php echo($filekeys['0']); ?></a><?php //echo(gmdate("Y-m-d H:i:s", $files[$filekeys['0']])); ?>
+      <a href="http://ci.whobanned.me/dev/<?php echo($filekeys['0']);?>"><?php echo($filekeys['0']); ?></a><?php echo('<small>('.gmdate("Y-m-d H:i:s", $files[$filekeys['0']]).')</small>'); ?> 
       <img src="https://drone.io/github.com/FearFree/WhoBannedMe/status.png">
     </p>
 
@@ -43,7 +43,7 @@
     <div class="ui list">
       <?php
         foreach (array_slice($files, 1) as $build => $date) {
-          echo '<a class="item" href="http://ci.whobanned.me/dev/' . $build . '">' . $build . '' . gmdate("Y-m-d H:i:s", $date) . '</a>';
+          echo '<a class="item" href="http://ci.whobanned.me/dev/'.$build.'">'.$build.'</a> <small>('.gmdate("Y-m-d H:i:s", $date).')</small>';
         }
       ?>
     </div>
