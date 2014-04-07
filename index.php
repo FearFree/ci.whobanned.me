@@ -69,10 +69,10 @@
     <div class="main container">
       <h2 class="ui dividing header">Development artifacts</h2>
 
-      <p>Current Release Build: <a href="http://ci.whobanned.me/release/1.1">1.1</a></p>
+      <p>Current Release Build: <a href="http://ci.whobanned.me/release/1.1/WhoBannedMe.jar">1.1</a></p>
 
       <p>Latest Dev Build: 
-        <a href="http://ci.whobanned.me/dev/<?php echo($filekeys['0']); ?>"><?php echo($filekeys['0']); ?></a> <?php echo('<small>(' . gmdate("Y-m-d H:i:s", $files[$filekeys['0']]) . ')</small>'); ?> 
+        <a href="http://ci.whobanned.me/dev/<?php echo($filekeys['0']); ?>/WhoBannedMe.jar"><?php echo($filekeys['0']); ?></a> <?php echo('<small>(' . gmdate("Y-m-d H:i:s", $files[$filekeys['0']]) . ')</small>'); ?> 
         <img src="https://drone.io/github.com/FearFree/WhoBannedMe/status.png">
       </p>
 
@@ -83,7 +83,7 @@
       <div class="ui list" id="previousVersions">
         <?php
           foreach (array_slice($files, 1) as $build => $date) {
-            echo '<li class="item"><a href="http://ci.whobanned.me/dev/' . $build . '">' . $build . '</a> <small>(' . gmdate("Y-m-d H:i:s", $date) . ')</small></li>';
+            echo '<li class="item"><a href="http://ci.whobanned.me/dev/' . $build . '/WhoBannedMe.jar">' . $build . '</a> <small>(' . gmdate("Y-m-d H:i:s", $date) . ')</small></li>';
           }
         ?>
       </div>
