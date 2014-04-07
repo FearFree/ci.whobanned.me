@@ -13,8 +13,8 @@
     arsort($files);
   }
 
-  //scan_dir("/var/www/dev", $files);
-  scan_dir("dev", $files);
+  scan_dir("/var/www/dev", $files);
+  //scan_dir("dev", $files);
   $filekeys = array_keys($files);
 ?>
 
