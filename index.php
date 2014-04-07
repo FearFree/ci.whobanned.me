@@ -44,6 +44,9 @@
           <a href="http://www.fishbans.com" class="icon item" data-content="fishbans.com">
             <i class="ban circle icon"></i> Fishbans.com
           </a>
+          <a href="http://mcstats.org/plugin/WhoBannedMe" class="icon item" data-content="Statistics">
+            <i class="basic signal icon"></i> Statistics
+          </a>
 
           <a href="https://github.com/FearFree/WhoBannedMe" class="icon item" data-content="View project on Github">
             <i class="icon github"></i>
