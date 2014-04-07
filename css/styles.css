@@ -1,6 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-body { color:#333;font-family: "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+body { margin:0;color:#333;font-family: "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;background: url('http://subtlepatterns.com/patterns/ricepaper_v3.png'); }
 
 a:hover { color: #00BAFF; }
 a { color: #009FDA;text-decoration: none; }
+
+#navigation { background-color: #034482;
+              background-image: -moz-linear-gradient(top,#04498c,#033c73);
+              background-image: -webkit-gradient(linear,0 0,0 100%,from(#04498c),to(#033c73));
+              background-image: -webkit-linear-gradient(top,#04498c,#033c73);
+              background-image: -o-linear-gradient(top,#04498c,#033c73);
+              background-image: linear-gradient(to bottom,#04498c,#033c73);
+              background-repeat: repeat-x;
+              border-color: #033464;
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff04498c',endColorstr='#ff033c73',GradientType=0);
+}
+.pageHeader { margin: 0px 0px 3em;padding-top: 70px;padding-bottom: 30px;border-bottom: 1px solid #DDD;background:#fff; }
+#builds .container { width: 1100px;margin: 0px auto; }
+#builds .main.container { position: relative;padding-bottom: 100px; }
+
+#previousVersions a.item { display:inline; }
+#previousVersions small { display:inline; }
+#previousVersions a.item:after { display:none; }
+                          
